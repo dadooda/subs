@@ -25,6 +25,6 @@ Sub features
   1. Sub's home repository is **checked out to N locations simultaneously**.
   2. **Don't forget to commit** your (semi-)working changes to the sub's home repository.
 3. Underlying **mechanism** to manage the distribution of subs is **Git submodules**.
-4. Subs are often **local to a team or a developer** which produced them.
+4. Subs are often **local to developer/team** which produced them.
   1. Subs **don't require unique names** like gems do. It's okay to name your sub `Downloader` if you can uniquely identify what it is.
 5. Subs **must have full test coverage**. This is to compensate for their highly dynamic and version-free nature.
