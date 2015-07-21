@@ -20,7 +20,7 @@ Sub features
 1. Subs are truly **lightweight**. 
   1. Subs **don't have version numbers**.
   2. The amount of **formalities** required to update a sub **is almost zero**.
-  3. There is **no minimum amount of code** to make a sub. If your extension is 1 line long, but is reusable -- go make a sub of it.
+  3. There is **no minimum amount of code** required to make a sub. If your extension is 1 line long, but is reusable -- go make a sub of it.
 2. Subs do have **home repositories**, but updates to subs are made **directly in the projects which use them**.
   1. Sub's home repository is **checked out to N locations simultaneously**.
   2. **Don't forget to commit** your (semi-)working changes to the sub's home repository.
