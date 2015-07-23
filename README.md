@@ -24,7 +24,7 @@ Sub features
   4. There is **no minimum amount of code** required to make a sub. If your extension is 1 line long, but is reusable &mdash; go make a sub of it.
 2. Subs do have **home repositories**, but updates to subs are made **directly in the projects which use them**.
   1. Sub's home repository is **checked out to N locations simultaneously**.
-  2. **Don't forget to commit** your (semi-)working changes to the sub's home repository.
+  2. After you've made an update to the sub **commit your changes right away** to the sub's `origin`.
 3. Underlying **mechanism** to manage the distribution of subs is **Git submodules**.
 4. Subs are often **local to developer/team** which produced them.
   1. Subs **don't require unique names** like gems do. It's okay to name your sub `downloader` if you can uniquely identify what it is.
@@ -57,8 +57,6 @@ Consider you are in the local working copy of your project and you want to insta
 
     ```ruby
     require "feature/cache"
-    
-    ...
     ```
 
 5. To update all subs to their latest versions, do a:
