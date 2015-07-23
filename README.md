@@ -20,11 +20,11 @@ Sub features
 1. Subs are truly **lightweight**. 
   1. Subs **don't have version numbers**.
   2. The amount of **formalities** required to update a sub **is almost zero**.
-  3. There is **no minimum amount of code** required to make a sub. If your extension is 1 line long, but is reusable -- go make a sub of it.
+  3. There is **no minimum amount of code** required to make a sub. If your extension is 1 line long, but is reusable &mdash; go make a sub of it.
 2. Subs do have **home repositories**, but updates to subs are made **directly in the projects which use them**.
   1. Sub's home repository is **checked out to N locations simultaneously**.
   2. **Don't forget to commit** your (semi-)working changes to the sub's home repository.
 3. Underlying **mechanism** to manage the distribution of subs is **Git submodules**.
 4. Subs are often **local to developer/team** which produced them.
-  1. Subs **don't require unique names** like gems do. It's okay to name your sub `Downloader` if you can uniquely identify what it is.
+  1. Subs **don't require unique names** like gems do. It's okay to name your sub `downloader` if you can uniquely identify what it is.
 5. Subs **must have full test coverage**. This is to compensate for their highly dynamic and version-free nature.
