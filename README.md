@@ -4,7 +4,7 @@ Subs: A lightweight alternative to Ruby gems
 Overview
 --------
 
-There are often cases when a developer/team need to reuse and share portions of code which just "aren't enough" for a gem. Subs might be a solution to this problem. Read on.
+There are often cases when a developer/team needs to reuse and share portions of code which just "aren't enough" for a gem. Subs might be a solution to this problem. Read on.
 
 The name "subs", the concept of subs, the technology behind subs are yet experimental. All sorts of feedback is highly appreciated.
 
@@ -59,7 +59,7 @@ Consider you are in the local working copy of your project and you want to insta
     require "feature/cache"
     ```
 
-5. To update all subs to their latest versions, do a:
+5. To update all installed subs to their latest versions, do a:
 
     ```sh
     $ git submodule update --init --remote
