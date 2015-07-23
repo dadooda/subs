@@ -1,5 +1,5 @@
-Subs: The lightweight alternative to Ruby gems
-==============================================
+Subs: A lightweight alternative to Ruby gems
+============================================
 
 Introduction
 ------------
