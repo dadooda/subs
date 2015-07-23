@@ -1,8 +1,8 @@
 Subs: A lightweight alternative to Ruby gems
 ============================================
 
-Introduction
-------------
+Overview
+--------
 
 There are often cases when a developer/team need to reuse and share portions of code which just "aren't enough" for a gem. Subs might be a solution to this problem. Read on.
 
@@ -29,3 +29,41 @@ Sub features
 4. Subs are often **local to developer/team** which produced them.
   1. Subs **don't require unique names** like gems do. It's okay to name your sub `downloader` if you can uniquely identify what it is.
 5. Subs **must have full test coverage**. This is to compensate for their highly dynamic and version-free nature.
+
+Installation
+------------
+
+Consider you are in the local working copy of your project and you want to install a sub from https://github.com/dadooda/feature_cache into it. Steps follow.
+
+1. Create a directory for subs:
+
+    ```sh
+    $ mkdir -p vendor/subs
+    ```
+
+2. Check out a Git submodule:
+
+    ```sh
+    $ git submodule add git@github.com:dadooda/feature_cache vendor/subs/feature_cache
+    ```
+
+3. Add the `$:` include path update to your boot code, e.g. in your `boot.rb`:
+
+    ```ruby
+    Dir[File.expand_path("../vendor/subs/*/lib", __FILE__)].each {|fn| $: << fn if File.directory?(fn)}
+    ```
+
+4. Now you can use the library anywhere in your code:
+
+    ```ruby
+    require "feature/cache"
+    
+    ...
+    ```
+
+5. To update all subs to their latest versions, do a:
+
+    ```sh
+    $ git submodule update --init --remote
+    ```
+
