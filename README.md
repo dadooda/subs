@@ -47,10 +47,10 @@ Consider you are in the local working copy of your project and you want to insta
     $ git submodule add git@github.com:dadooda/feature_cache vendor/subs/feature_cache
     ```
 
-3. Add the `$:` include path update to your boot code, e.g. in your `boot.rb`:
+3. Add the `$:` include path update to your boot code. E.g. in your `config/boot.rb` do a:
 
     ```ruby
-    Dir[File.expand_path("../vendor/subs/*/lib", __FILE__)].each {|fn| $: << fn if File.directory?(fn)}
+    Dir[File.expand_path("../../vendor/subs/*/lib", __FILE__)].each {|fn| $: << fn if File.directory?(fn)}
     ```
 
 4. Now you can use the library anywhere in your code:
