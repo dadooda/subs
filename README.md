@@ -65,3 +65,7 @@ Consider you are in the local working copy of your project and you want to insta
     $ git submodule update --init --remote
     ```
 
+Cheers!
+-------
+
+&mdash; Alex Fortuna, &copy; 2015
