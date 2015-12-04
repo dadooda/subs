@@ -44,7 +44,7 @@ Consider you are in the local working copy of your project and you want to insta
 2. Check out a Git submodule:
 
     ```sh
-    $ git submodule add git@github.com:dadooda/feature_cache vendor/subs/feature_cache
+    $ git submodule add git@github.com:dadooda/feature_cache.git vendor/subs/feature_cache
     ```
 
 3. Add the `$:` include path update to your boot code. E.g. in your `config/boot.rb` do a:
