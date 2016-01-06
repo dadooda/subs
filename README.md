@@ -25,7 +25,7 @@ Sub features
   2. Subs **don't have init code**. They won't gain control until you `require` them.
   3. The amount of **formalities** required to update a sub **is almost zero**.
   4. There is **no minimum amount of code** required to make a sub. If your extension is 1 line long, but is reusable &mdash; go make a sub of it.
-2. Subs do have **home repositories**, but updates to subs are made **directly in the projects which use them**.
+2. Subs do have **home repositories**, but updates to subs are made [**directly in the projects which use them**](https://github.com/dadooda/subs/wiki/Common-procedures).
   1. Sub's home repository is **checked out to N locations simultaneously**.
   2. After you've made an update to the sub **commit your changes right away** to the sub's `origin`.
 3. Underlying **mechanism** to manage the distribution of subs is **Git submodules**.
@@ -67,6 +67,11 @@ Consider you are in the local working copy of your project and you want to insta
     ```sh
     $ git submodule update --init --remote
     ```
+
+Further reading
+---------------
+
+More information on working with subs is available at the project's [wiki pages](https://github.com/dadooda/subs/wiki).
 
 Cheers!
 -------
