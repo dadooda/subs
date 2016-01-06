@@ -71,4 +71,4 @@ Consider you are in the local working copy of your project and you want to insta
 Cheers!
 -------
 
-&mdash; Alex Fortuna, &copy; 2015
+&mdash; Alex Fortuna, &copy; 2015-2016
