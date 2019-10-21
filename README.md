@@ -31,7 +31,7 @@ Sub features
 3. Underlying **mechanism** to manage the distribution of subs is **Git submodules**.
 4. Subs are often **local to developer/team** which produced them.
   1. Subs **don't require unique names** like gems do. It's okay to name your sub `downloader` if you can uniquely identify what it is.
-5. Subs **must have full test coverage**. This is to compensate for their highly dynamic and version-free nature.
+5. Subs **have 100% test coverage**. This is to compensate for their highly dynamic and version-free nature.
 
 Setup
 -----
